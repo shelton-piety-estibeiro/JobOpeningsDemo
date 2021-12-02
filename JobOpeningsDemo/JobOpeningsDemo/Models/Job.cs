@@ -13,7 +13,7 @@ namespace JobOpeningsDemo.Models
     using System.Collections.Generic;
     using System.Web.Mvc;
 
-    
+    [Bind(Exclude ="Locations, Departments")]
     public partial class Job
     {
         public int Id { get; set; }
